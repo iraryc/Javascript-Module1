@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- the label and input go togther, one is to name the box and the input is the box they both need the same ID and for name -->
+    <label for="mynumber">Number </label>
+    <input type="text" id="mynumber">
+    
+    <!-- This is my second number -->
+    <label for="mysecondnumber">Second Number</label>
+    <input type="text" id="secondnumber">
+    <!-- The onclick is an event that calls a function -->
+    <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
+
+<!-- This is needed to show the result of what you are creating  -->
+    <p id="result">The result</p>
+    <p id="finalresult">Final Result</p>
+
+    <script>
+        function ClickTheButton()
+        {
+            //The text of the input will be stored in the variable myTekst and then displayed in the alert
+            let myNumber = Number(document.getElementById('mynumber').value);
+
+            //Algoritme calculation
+            let result = myNumber;
+            // we are getting the id = mysecondnumber and making it add to the first myNumber from above ^, we always need a document.getElementByID and .value!!
+            let mysecondnumber = Number(document.getElementById('secondnumber').value)
+           
+            let finalresult = result + mysecondnumber;
+
+            //Display it in element
+            document.getElementById('result').innerHTML = result;
+            document.getElementById('finalresult').innerHTML = finalresult;
+
+        }
+    </script>
+</body>
+
+</html>

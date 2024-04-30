@@ -7,3 +7,4 @@ if ((leapYear % 4 === 0 && 100 != 0) || (leapYear % 400 === 0)) {
 } else {
     console.log(`Sad this is not a leapyear :(`);
 }
+

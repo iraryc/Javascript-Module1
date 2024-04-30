@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <div>
+        <label for="numberOne">Number </label>
+        <input type="text" id="numberOne">
+    </div>
+        
+        <div>
+        <label for="numberTwo">Second Number</label>
+        <input type="text" id="numberTwo">
+    </div>
+    
+
+    <div>
+    <!-- The onclick is an event that calls a function -->
+        <button id="bntMyButtonAdd" onclick="ClickTheAddButton()">Addition</button>
+        <button id="bntMyButtonSub" onclick="ClickTheSubButton()">Subtraction</button>
+        <button id="bntMyButtonMul" onclick="ClickTheMulButton()">Multiply</button>
+        <button id="bntMyButtonDiv" onclick="ClickTheDivButton()">Divide</button>
+
+    </div>
+        <!-- This is needed to show the result of what you are creating  -->
+        <p>Answer <input type="number" id="answer"/></p>
+    
+
+    <script src="calc.js"></script>
+</body>
+</html>
