@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAT Calc</title>
+</head>
+<body>
+    <!-- we created the button that we want to click -->
+    <button onclick="DisplayMessage()">Çlick me for first name</button>
+    <button onclick = "displayothermessage()">Click me for favorite food</button>
+
+    <!-- This is text that will eventually change once we click the button we created above ^ -->
+    <div id="messageDiv">This is my first name</div>
+    <div id="secondmessage">This is my second text</div>
+
+
+<script>
+    //      
+     const messageDiv = document.getElementById("messageDiv"); 
+
+     function DisplayMessage() {
+     const messageDiv = document.getElementById("messageDiv"); 
+     
+     //display the innerText (innerHTML)
+     messageDiv.innerHTML = "My first name is Andrea!";     
+   }
+
+   function displayothermessage() {
+    const secondmessage = document.getElementById("secondmessage");
+
+    secondmessage.innerHTML = "My favorite food is Sushi!";
+   }
+ </script>
+</body>
+</html>
