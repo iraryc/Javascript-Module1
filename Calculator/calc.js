@@ -18,8 +18,8 @@ function ClickTheSubButton() {
     let numberOne = Number (document.getElementById('numberOne').value);
     let numberTwo = Number (document.getElementById('numberTwo').value);
 
-    console.log("Number One:", numberOne);
-    console.log("Number Two:", numberTwo);
+    // console.log("Number One:", numberOne);
+    // console.log("Number Two:", numberTwo);
 
     let answer = numberOne - numberTwo;
 
